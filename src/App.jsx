@@ -5,6 +5,7 @@ import ComParametro from './components/basicos/ComParametro';
 import Aleatorio from './components/basicos/Aleatorio';
 import Card from './components/layout/card';
 import Familia from './components/basicos/Familia';
+import FamiliaMembro from './components/basicos/FamiliaMembro';
 
 
 export default _ =>
@@ -13,7 +14,11 @@ export default _ =>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
             <Card titulo="#05 - Familia">
-                <Familia sobrenome="nunes"/>
+                <Familia sobrenome="lopes">
+                <FamiliaMembro nome="Pedro" />
+                <FamiliaMembro nome="maria" />
+                <FamiliaMembro nome="mira" />
+                </Familia>
             </Card>
             <Card titulo="#04 - Número aleatório">
                 <Aleatorio min={1} max={12} />
@@ -37,3 +42,5 @@ export default _ =>
             </Card>
         </div>
     </div>
+
+// <Familia/> -> isso eh um elemento
