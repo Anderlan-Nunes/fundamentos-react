@@ -1,27 +1,30 @@
+import './TabelaProdutos.css'
 import produtos from "../../data/produtos"
 
 export default props => {
-    const ListaProdutos = produtos.map((produto) => {
+    const ListaProdutos = produtos.map((produto, i) => {
         return (
-            <tr key={produto.id}>
+            <tr key={produto.id} className={i % 2 ==0 ?  "Par" : "Impar"}>
                 <td>{produto.id}</td>
                 <td>{produto.produto}</td>
-                <td>{produto.preco}</td>
+                <td>R$ {produto.preco.toFixed(2).replace('.',',')}</td>
             </tr>
         )
     })
     return(
-        <table>
-            <thead>
-                <tr>
-                <th>Id</th>
-                <th>Product</th>
-                <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                {ListaProdutos}
-            </tbody>
-        </table>
+        <div className='TabelaProduto'>
+            <table border="1">
+                <thead>
+                    <tr>
+                    <th>Id</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {ListaProdutos}
+                </tbody>
+            </table>
+        </div>
     )
 }

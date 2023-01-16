@@ -16,7 +16,7 @@ export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
-            <Card titulo="#7 - Tabela de produtos">
+            <Card titulo="#7 - Tabela de produtos" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
             <Card titulo="#06 - Lista de alunos">
@@ -29,7 +29,7 @@ export default _ =>
                 <FamiliaMembro nome="mira" />
                 </Familia>
             </Card>
-            <Card titulo="#04 - Número aleatório">
+            <Card titulo="#04 - Número aleatório" color="#080">
                 <Aleatorio min={1} max={12} />
             </Card>
             <Card titulo="#03 - Com parâmetro 2">
@@ -53,3 +53,9 @@ export default _ =>
     </div>
 
 // <Familia/> -> isso eh um elemento
+
+/**
+ * https://www.cod3r.com.br/courses/take/react-redux-fundamentos-e-2-apps-do-absoluto-zero/lessons/12636886-componente-card-03
+ * 
+ * recebendo a cor através do parametro
+ */
