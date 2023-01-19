@@ -8,6 +8,7 @@ import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/basicos/ListaAlunos';
 import TabelaProdutos from './components/basicos/TabelaProdutos';
+import DiretaPai from './components/comunicacao/direta/DiretaPai';
 import IndiretaPai from './components/comunicacao/indireta/IndiretaPai';
 
 export default _ =>
@@ -17,6 +18,9 @@ export default _ =>
         <div className='Cards'>
             <Card titulo="#9 - Comunicação Indireta" color="yellow">
                 <IndiretaPai/>
+            </Card>
+            <Card titulo="#8 - Comunicação Direta" color="#3A9AD9">
+                <DiretaPai></DiretaPai>
             </Card>
             <Card titulo="#7 - Tabela de produtos" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
