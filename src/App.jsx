@@ -8,14 +8,16 @@ import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/basicos/ListaAlunos';
 import TabelaProdutos from './components/basicos/TabelaProdutos';
-
-
+import IndiretaPai from './components/comunicacao/indireta/IndiretaPai';
 
 export default _ =>
 
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo="#9 - Comunicação Indireta" color="yellow">
+                <IndiretaPai/>
+            </Card>
             <Card titulo="#7 - Tabela de produtos" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
