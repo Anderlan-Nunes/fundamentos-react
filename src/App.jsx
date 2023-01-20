@@ -10,12 +10,16 @@ import ListaAlunos from './components/basicos/ListaAlunos';
 import TabelaProdutos from './components/basicos/TabelaProdutos';
 import DiretaPai from './components/comunicacao/direta/DiretaPai';
 import IndiretaPai from './components/comunicacao/indireta/IndiretaPai';
+import Input from './components/formulario/Input';
 
 export default _ =>
 
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo="#10 - Componente controlado (Input)" >
+                <Input/>
+            </Card>
             <Card titulo="#9 - Comunicação Indireta" color="yellow">
                 <IndiretaPai/>
             </Card>
