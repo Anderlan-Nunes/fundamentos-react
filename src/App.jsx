@@ -13,12 +13,16 @@ import IndiretaPai from './components/comunicacao/indireta/IndiretaPai';
 import Contador from './components/contador/Contador';
 
 import Input from './components/formulario/Input';
+import ContadorFuncao from './components/contador/ContadorFuncao';
 
 export default _ =>
 
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo="#12 - Contador Função" color="violet">
+                <ContadorFuncao/>
+            </Card>
             <Card titulo="#11 - Contador" color="#3A9E55">
                 <Contador/>
             </Card>
