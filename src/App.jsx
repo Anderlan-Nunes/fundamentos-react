@@ -10,10 +10,10 @@ import ListaAlunos from './components/basicos/ListaAlunos';
 import TabelaProdutos from './components/basicos/TabelaProdutos';
 import DiretaPai from './components/comunicacao/direta/DiretaPai';
 import IndiretaPai from './components/comunicacao/indireta/IndiretaPai';
-import Contador from './components/contador/Contador';
-
 import Input from './components/formulario/Input';
-import ContadorFuncao from './components/contador/ContadorFuncao';
+import Contador from './components/contadores/classe/Contador';
+import ContadorFuncao from './components/contadores/funcao/ContadorFuncao';
+
 
 export default _ =>
 
