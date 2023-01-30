@@ -12,6 +12,7 @@ import DiretaPai from './components/comunicacao/direta/DiretaPai';
 import IndiretaPai from './components/comunicacao/indireta/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contadores/classe/Contador';
+import Contador2 from './components/contadores/classe/Contador2';
 import ContadorFuncao from './components/contadores/funcao/ContadorFuncao';
 
 
@@ -20,6 +21,9 @@ export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo="#13 - Contador2" color="#363636">
+                <Contador2/>
+            </Card>
             <Card titulo="#12 - Contador Função" color="violet">
                 <ContadorFuncao/>
             </Card>
