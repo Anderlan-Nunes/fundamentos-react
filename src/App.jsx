@@ -15,6 +15,7 @@ import Contador from './components/contadores/classe/Contador';
 import Contador2 from './components/contadores/classe/Contador2';
 import ContadorFuncao from './components/contadores/funcao/ContadorFuncao';
 import Mega from './components/mega/Mega';
+import ContadorFuncao2 from './components/contadores/funcao/ContadorFuncao2';
 
 
 export default _ =>
@@ -22,23 +23,26 @@ export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
-            <Card titulo="#14 - Mega" color="#D3D3D3">
+            <Card titulo="#15 - Mega" color="#D3D3D3">
                 <Mega/>
             </Card>
+            <Card titulo="#14 - Contador Função2" color="#808080">
+                <ContadorFuncao2 />
+            </Card>
             <Card titulo="#13 - Contador2" color="#363636">
-                <Contador2/>
+                <Contador2 />
             </Card>
             <Card titulo="#12 - Contador Função" color="violet">
-                <ContadorFuncao/>
+                <ContadorFuncao />
             </Card>
             <Card titulo="#11 - Contador" color="#3A9E55">
-                <Contador/>
+                <Contador />
             </Card>
             <Card titulo="#10 - Componente controlado (Input)" >
-                <Input/>
+                <Input />
             </Card>
             <Card titulo="#9 - Comunicação Indireta" color="yellow">
-                <IndiretaPai/>
+                <IndiretaPai />
             </Card>
             <Card titulo="#8 - Comunicação Direta" color="#3A9AD9">
                 <DiretaPai></DiretaPai>
@@ -51,9 +55,9 @@ export default _ =>
             </Card>
             <Card titulo="#05 - Familia">
                 <Familia sobrenome="lopes">
-                <FamiliaMembro nome="Pedro" />
-                <FamiliaMembro nome="maria" />
-                <FamiliaMembro nome="mira" />
+                    <FamiliaMembro nome="Pedro" />
+                    <FamiliaMembro nome="maria" />
+                    <FamiliaMembro nome="mira" />
                 </Familia>
             </Card>
             <Card titulo="#04 - Número aleatório" color="#080">
